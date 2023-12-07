@@ -13,3 +13,7 @@ OPTIONS (
   TIME_SERIES_DATA_COL='percent_congestion',
   TIME_SERIES_ID_COL='city_name'
 ) AS SELECT * FROM `bigquery-public-data.covid19_geotab_mobility_impact.city_congestion`
+
+
+<br>
+SELECT DATE(start_date) AS DATE_ST, start_station_id, count(*) AS NO_TRIP FROM `bigquery-public-data.san_francisco.bikeshare_trips` group by 1,2 ORDER BY 1 ASC
