@@ -39,3 +39,4 @@ ML.DETECT_ANOMALIES (
   STRUCT(0.8 AS anomaly_prob_threshold)
 )
 
+#### test
